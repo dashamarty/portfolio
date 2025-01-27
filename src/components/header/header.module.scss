@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    padding: 30px 50px;
+    height: max-content;
+    color: #AA0202;
+    font-size: 20px;
+    line-height: 100%;
+    z-index: 100;
+    position: fixed;
+    background-color: #fafafa;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'PPMori', sans-serif;  
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+
+        .about {
+            display: none;
+        }
+    }
+
+    .links__container {
+        display: flex;
+        gap: 40px;
+        justify-content: end;
+
+        @media (max-width: 800px) {
+            gap: 20px;
+        }
+
+    }
+
+    .logo {
+        font-size: 40px;
+        line-height: 100%;
+        text-align: center;  
+        font-weight: 700;
+
+        @media (max-width: 800px) {
+            font-size: 30px;
+        }
+    }
+
+}
