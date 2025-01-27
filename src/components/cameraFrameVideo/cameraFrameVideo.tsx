@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import styles from "./cameraFrameVideo.module.scss";
 
 const CameraFrameVideoData = {
-  src: "/greeting/video.MOV",
+  src: "/greeting/video.mov",
 };
 
 export const CameraFrameVideo: React.FC = () => {
