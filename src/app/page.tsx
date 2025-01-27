@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import { Footer } from "@/components/footer/footer";
 import { GreetingBlock } from "@/components/greetingBlock/greetingBlock";
 import Folders from "@/components/folders/folders";
+import FortuneBlock from "@/components/fotruneBlock/fotruneBlock";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <GreetingBlock />
         <Folders />
+        <FortuneBlock />
       </main>
       <Footer />
     </div>
