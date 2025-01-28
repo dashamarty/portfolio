@@ -12,11 +12,7 @@ type Card = {
   link: string;
 };
 
-type CardListProps = {
-  cards: Card[];
-};
-
-const CardList: React.FC<CardListProps> = ({ cards }) => {
+export default function CardList({ cards }: { cards: Card[] }) {
   return (
     <div className={styles.swiperContainer}>
       <Swiper
@@ -44,6 +40,4 @@ const CardList: React.FC<CardListProps> = ({ cards }) => {
       </Swiper>
     </div>
   );
-};
-
-export default CardList;
+}

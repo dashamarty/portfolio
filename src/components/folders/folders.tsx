@@ -4,110 +4,27 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./folder.module.scss";
 import CardList from "../cardList/cardList";
-
-type FolderId = "folder1" | "folder2" | "folder3";
+import { folders } from "@/data/projects";
 
 export default function Folders() {
-  const [foldersOrder, setFoldersOrder] = useState<FolderId[]>([
-    "folder1",
-    "folder2",
-    "folder3",
-  ]);
+  const [foldersOrder, setFoldersOrder] = useState(
+    folders.map((folder) => folder.id),
+  );
 
-  const handleClick = (folderId: FolderId) => {
+  const handleClick = (folderId: string) => {
     const clickedIndex = foldersOrder.indexOf(folderId);
-    if (clickedIndex === 0) return; // Если верхняя папка, ничего не меняем
+    if (clickedIndex === 0) return; // Do nothing if the clicked folder is already at the top
     const newOrder = [...foldersOrder];
-    newOrder.unshift(newOrder.splice(clickedIndex, 1)[0]); // Переместить папку наверх
+    newOrder.unshift(newOrder.splice(clickedIndex, 1)[0]); // Move folder to the top
     setFoldersOrder(newOrder);
-  };
-
-  // Пример данных для карточек
-  const folderData = {
-    folder1: [
-      {
-        title: "Card 1",
-        description:
-          "Description 1 Description Description Description Description Description Description DescriptionDescription",
-        imageUrl: "/images/card1.jpg",
-        link: "/link1",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-    ],
-    folder2: [
-      {
-        title: "Card 3",
-        description: "Description 3",
-        imageUrl: "/images/card3.jpg",
-        link: "/link3",
-      },
-      {
-        title: "Card 4",
-        description: "Description 4",
-        imageUrl: "/images/card4.jpg",
-        link: "/link4",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-    ],
-    folder3: [
-      {
-        title: "Card 5",
-        description: "Description 5",
-        imageUrl: "/images/card5.jpg",
-        link: "/link5",
-      },
-      {
-        title: "Card 6",
-        description: "Description 6",
-        imageUrl: "/images/card6.jpg",
-        link: "/link6",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-      {
-        title: "Card 2",
-        description: "Description 2",
-        imageUrl: "/images/card2.jpg",
-        link: "/link2",
-      },
-    ],
   };
 
   return (
     <div className={styles.foldersContainer} id="projects">
       {foldersOrder.map((folderId, index) => {
+        const folder = folders.find((f) => f.id === folderId);
+        if (!folder) return null;
+
         const topPosition = index * -40;
         const zIndex = 3 - index;
 
@@ -131,15 +48,21 @@ export default function Folders() {
             />
             <Image
               src={`/folders/${folderId}m.png`}
-              alt={`Folder ${folderId}`}
+              alt={`Folder ${folderId} Mobile`}
               width={390}
               height={481}
               className={styles.folderImageMobile}
               priority
             />
-
-            {/* Добавляем слайдер с карточками внутри каждой папки */}
-            <CardList cards={folderData[folderId]} />
+            {/* Render cards within the folder */}
+            <CardList
+              cards={folder.projects.map((project) => ({
+                title: project.title,
+                description: project.description,
+                imageUrl: project.imageUrl,
+                link: project.link,
+              }))}
+            />
           </div>
         );
       })}

@@ -64,4 +64,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: url('/cursor.svg'), auto;
+}
+
+button {
+  cursor: url('/cursor.svg'), auto;
 }
