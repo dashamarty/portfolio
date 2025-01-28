@@ -1,0 +1,147 @@
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vw;
+  background-color: #023048;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    height: 100vh;  
+}
+}
+
+.fortuneWrapper {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 70px;
+
+  @media (max-width: 700px) {
+    width: 300px;
+    height: 200px;
+    padding-left: 35px;
+  }
+
+}
+
+.fortune {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  transform-origin: 40% 50%;
+  transform: rotate(-10deg);
+
+  @media (max-width: 700px) {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+.fortuneLeft {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/77607/cookie-left.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: 1;
+
+  @media (max-width: 700px) {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+
+  }
+}
+
+.fortuneRight {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 190px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/77607/cookie-right.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 3;
+
+  @media (max-width: 700px) {
+    width: 100px;
+    height: 100px;
+    left: 95px;
+    background-size: contain;
+  }
+}
+
+.fortuneMessage {
+  position: absolute;
+  left: -150px;
+  right: 180px;
+  font-family: courier;
+  font-style: italic;
+  top: 10px;
+    bottom: 50px;
+  z-index: 2;
+  overflow: hidden;
+  transform: rotateZ(8deg);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media (max-width: 700px) {
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 40px;
+  }
+}
+
+.fortuneMessage span {
+  display: block;
+  background-color: #fff;
+  padding: 16px 30px;
+  white-space: pre-wrap; /* Preserve line breaks */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transform-origin: right bottom;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  opacity: 0;
+  line-height: 1.5; /* Add spacing between lines */
+  font-size: 16px; /* Adjust font size */
+  min-height: 100px; /* Ensure the background adjusts */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media (max-width: 700px) {
+    padding: 8px 15px;
+    font-size: 12px;
+    line-height: 1;
+    min-height: 70px;
+    bottom: 10px;
+    right: 5px;
+  }
+}
+
+
+/* GSAP Animations for the fortune cookie opening */
+.fortuneWrapper.open .fortuneMessage {
+  opacity: 1;
+}
+
+.fortuneWrapper.open .fortuneMessage span {
+  opacity: 1;
+
+}

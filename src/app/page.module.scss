@@ -4,4 +4,13 @@
   height: 100%;
 
   font-family: 'Futura', sans-serif;
+  position: relative;
+
+}
+
+.top__button {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
