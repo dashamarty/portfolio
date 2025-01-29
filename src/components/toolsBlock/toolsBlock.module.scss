@@ -1,0 +1,97 @@
+.toolsBlock {
+    background: url("/tools/background.jpg") no-repeat ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 950px) {
+        height: 40vh;
+
+    }
+
+    .content {
+        position: relative;
+
+    }
+     
+    .tools {
+        width: 80vw;
+        height: auto;
+
+
+    }
+
+    .laptop {
+        display: block;
+        position: absolute;
+        object-fit: contain;
+        width: 130px;
+        height: auto;
+
+        left: 90%;
+    top: 30%;
+
+    animation: tilt-shaking 4s infinite;
+
+    &:hover {
+        animation: tilt-shaking 0.3s infinite;
+    }
+    }
+
+    .notebook {
+        display: block;
+        position: absolute;
+        object-fit: contain;
+        width: 102px;
+        height: auto;
+
+        bottom: 30%;
+        left: -5%;
+
+        animation: tilt-shaking 3s infinite;
+
+        &:hover {
+            animation: tilt-shaking 0.3s infinite;
+        }
+    }
+
+    .table {
+        display: block;
+        position: absolute;
+        object-fit: contain;
+        height: 95px;
+        width: auto;
+
+        bottom: -10%;
+    right: 0;
+
+    animation: tilt-shaking-reflect 2s infinite;
+
+    &:hover {
+        animation: tilt-shaking-reflect 0.3s infinite;
+    }
+    }
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+
+  @keyframes tilt-shaking-reflect {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  

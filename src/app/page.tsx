@@ -5,6 +5,7 @@ import { GreetingBlock } from "@/components/greetingBlock/greetingBlock";
 import Folders from "@/components/folders/folders";
 import FortuneCookie from "@/components/fotruneBlock/fortuneBlock";
 import ToTheTopButton from "@/components/toTheTop/toTheTopButton";
+import ToolsBlock from "@/components/toolsBlock/toolsBLock";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <GreetingBlock />
         <Folders />
         <FortuneCookie />
+        <ToolsBlock />
       </main>
       <Footer />
       <ToTheTopButton />
