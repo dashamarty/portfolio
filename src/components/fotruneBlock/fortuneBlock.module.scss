@@ -9,8 +9,21 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1400px) {
+    margin-top: 15vw;
+  }
+
+  @media (max-width: 1115px) {
+    margin-top: 10vw;
+  }
+
+  @media (max-width: 970px) {
+    margin-top: 0;
+  }
+
   @media (max-width: 700px) {
     height: 100vh;  
+    margin-top: 0;
 }
 }
 

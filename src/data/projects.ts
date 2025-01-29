@@ -6,7 +6,7 @@ export const folders = [
       title: "Folder 1",
       projects: [
         {
-          id: "project1",
+          id: "project1 folder 1",
           title: "Project 1",
           description: "Detailed description for Project 1.",
           imageUrl: "/images/project1.jpg",
@@ -24,7 +24,7 @@ export const folders = [
         },
         {
           id: "project2",
-          title: "Project 2",
+          title: "Project 2 folder 1",
           description: "Detailed description for Project 2.",
           imageUrl: "/images/project2.jpg",
           details: [
@@ -46,7 +46,7 @@ export const folders = [
       title: "Folder 2",
       projects: [
         {
-          id: "project3",
+          id: "project3 folder 2",
           title: "Project 3",
           description: "Detailed description for Project 3.",
           imageUrl: "/images/project3.jpg",
@@ -70,7 +70,7 @@ export const folders = [
       projects: [
         {
           id: "project4",
-          title: "Project 4",
+          title: "Project 4 folder 2",
           description: "Detailed description for Project 4.",
           imageUrl: "/images/project4.jpg",
           details: [

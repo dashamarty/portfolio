@@ -1,5 +1,6 @@
 import { folders } from "@/data/projects";
 import styles from "./page.module.scss";
+import Image from "next/image";
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = folders
@@ -14,7 +15,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       <p>{project.description}</p>
       {project.details.map((detail, index) => (
         <div key={index} className={styles.projectDetail}>
-          <img src={detail.image} alt={detail.text} />
+          <Image src={detail.image} alt={detail.text} />
           <p>{detail.text}</p>
         </div>
       ))}
