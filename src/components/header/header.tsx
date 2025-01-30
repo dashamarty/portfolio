@@ -1,26 +1,39 @@
-import Link from "next/link";
+"use client";
 import styles from "./header.module.scss";
 
 export const Header = () => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.about}>
-        <Link href="./" className={styles.link}>
+        <button onClick={() => handleScroll("about")} className={styles.link}>
           about me
-        </Link>
+        </button>
       </div>
 
-      <Link href="./" className={styles.logo}>
+      <a href="./" className={styles.logo}>
         Daria Sinko
-      </Link>
+      </a>
 
       <div className={styles.links__container}>
-        <Link href="#projects" className={styles.link}>
+        <button
+          onClick={() => handleScroll("projects")}
+          className={styles.link}
+        >
           projects
-        </Link>
-        <Link href="#contacts" className={styles.link}>
+        </button>
+        <button
+          onClick={() => handleScroll("contacts")}
+          className={styles.link}
+        >
           contacts
-        </Link>
+        </button>
       </div>
     </header>
   );

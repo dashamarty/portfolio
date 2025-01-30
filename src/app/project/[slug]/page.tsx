@@ -4,13 +4,14 @@ import Image from "next/image";
 
 // Типизация параметров
 interface ProjectPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>; // Параметр slug
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
   const project = folders
     .flatMap((folder) => folder.projects)
-    .find((p) => p.id === params.slug);
+    .find((p) => p.id === slug);
 
   if (!project) return <div>Project not found</div>;
 
