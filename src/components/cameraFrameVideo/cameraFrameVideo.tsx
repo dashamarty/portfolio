@@ -54,7 +54,9 @@ export const CameraFrameVideo: React.FC = () => {
         src={CameraFrameVideoData.src}
         loop
         muted={isMuted}
-        autoPlay // Ensures video starts immediately
+        autoPlay
+        playsInline
+        webkit-playsinline
       />
 
       {/* Minimalistic Controls */}
