@@ -56,7 +56,7 @@ export const CameraFrameVideo: React.FC = () => {
         muted={isMuted}
         autoPlay
         playsInline
-        webkit-playsinline
+        webkit-playsinline="true"
       />
 
       {/* Minimalistic Controls */}
