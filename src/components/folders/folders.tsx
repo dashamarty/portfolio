@@ -54,7 +54,7 @@ export default function Folders() {
               className={styles.folderImageMobile}
               priority
             />
-            {/* Render cards for all projects within this folder */}
+
             <CardList
               cards={folder.projects.map((project) => ({
                 title: project.title,

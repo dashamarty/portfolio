@@ -1,20 +1,56 @@
-.projectPage {
-    padding: 2rem;
-    background: white;
-    color: black;
-  }
-  
-  .projectDetail {
-    margin-bottom: 2rem;
-  
-    img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  }
-  
+.wrapper {
+    padding: 150px 50px 100px 50px;
+    background-color: #fafafa;
+
+    .button {
+        background-color: transparent;
+        border: none;
+
+        margin-bottom: 140px;
+
+        &:hover {
+            svg path {
+                fill: #AA0202;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            margin-bottom: 80px;
+          }
+      }
+
+      .title {
+        font-size: 260px;
+        line-height: 100%;
+        margin-left: -20px;
+        padding-bottom: 200px;
+
+        @media (max-width: 1500px) {
+            font-size: 170px;
+            margin-left: -10px;
+            padding-bottom: 150px;
+          }
+      }
+
+      .subtitle {
+        font-size: 28;
+        color: #AA0202;
+
+        @media (max-width: 1500px) {
+            font-size: 14;
+
+          }
+      }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+    column-gap: 180px;
+    row-gap: 200px;
+
+    @media (max-width: 1500px) {
+        column-gap: 300px;
+      }
+    
+}

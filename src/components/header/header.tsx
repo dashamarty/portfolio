@@ -1,14 +1,14 @@
 "use client";
+import Link from "next/link";
 import styles from "./header.module.scss";
+export const handleScroll = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export const Header = () => {
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <header className={styles.header}>
       <div className={styles.about}>
@@ -17,9 +17,9 @@ export const Header = () => {
         </button>
       </div>
 
-      <a href="./" className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         Daria Sinko
-      </a>
+      </Link>
 
       <div className={styles.links__container}>
         <button
