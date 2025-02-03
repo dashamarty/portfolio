@@ -2,6 +2,10 @@
     padding: 150px 50px 100px 50px;
     background-color: #fafafa;
 
+    @media (max-width: 900px) {
+        padding: 100px 25px 100px 25px;
+      }
+
     .button {
         background-color: transparent;
         border: none;
@@ -17,6 +21,7 @@
         @media (max-width: 1500px) {
             margin-bottom: 80px;
           }
+
       }
 
       .title {
@@ -24,11 +29,22 @@
         line-height: 100%;
         margin-left: -20px;
         padding-bottom: 200px;
+        color: #1E1F20;
 
         @media (max-width: 1500px) {
             font-size: 170px;
             margin-left: -10px;
             padding-bottom: 150px;
+          }
+
+          @media (max-width: 900px) {
+            font-size: 120px;
+            padding-bottom: 150px;
+          }
+
+          @media (max-width: 500px) {
+            font-size: 80px;
+            padding-bottom: 100px;
           }
       }
 
@@ -38,6 +54,11 @@
 
         @media (max-width: 1500px) {
             font-size: 14;
+
+          }
+
+          @media (max-width: 900px) {
+            font-size: 20;
 
           }
       }
@@ -51,6 +72,17 @@
 
     @media (max-width: 1500px) {
         column-gap: 300px;
+      }
+
+      @media (max-width: 1200px) {
+        column-gap: 150px;
+        row-gap: 100px;
+      }
+
+      @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
       }
     
 }

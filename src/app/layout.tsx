@@ -4,6 +4,9 @@ import "./globals.scss";
 export const metadata: Metadata = {
   title: "Daria Sinko",
   description: "Welcome to my graphic design portfolio!",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

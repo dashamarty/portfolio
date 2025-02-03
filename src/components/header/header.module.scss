@@ -59,6 +59,11 @@
         color: inherit;
         display: inline-block;
         padding-bottom: 0; // To prevent underline from sticking to the text
+
+        @media (max-width: 800px) {
+            font-size: 18px;
+
+        }
         
         &::after {
           content: "";
