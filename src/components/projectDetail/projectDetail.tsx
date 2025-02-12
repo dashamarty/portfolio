@@ -26,7 +26,8 @@ type Content =
       text: string | React.ReactNode;
       listItems: string[];
       additionalText: string | React.ReactNode;
-    }; // Список с дополнительным текстом
+    } // Список с дополнительным текстом
+  | { type: "video"; src: string; poster?: string };
 
 // Компонент ProjectDetail, который принимает контент и рендерит его
 type ProjectDetailProps = {
@@ -206,6 +207,18 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
               />
             )}
           </div>
+        );
+
+      case "video":
+        return (
+          <video
+            className={styles.video}
+            src={contentAs.src}
+            loop
+            autoPlay
+            playsInline
+            webkit-playsinline="true"
+          />
         );
 
       // Если тип не найден, вернуть null
