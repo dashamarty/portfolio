@@ -6,6 +6,7 @@ import Folders from "@/components/folders/folders";
 import FortuneCookie from "@/components/fotruneBlock/fortuneBlock";
 import ToTheTopButton from "@/components/toTheTop/toTheTopButton";
 import ToolsBlock from "@/components/toolsBlock/toolsBLock";
+import { PossibleBlock } from "@/components/possibleBlock/possibleBlock";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <GreetingBlock />
         <Folders />
         <FortuneCookie />
+        <PossibleBlock />
         <ToolsBlock />
       </main>
       <Footer />
