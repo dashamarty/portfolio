@@ -58,8 +58,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
             className={styles.image} // Стили для изображения
             src={contentAs.src}
             alt={contentAs.alt}
-            width={1000}
-            height={1000}
+            width={2000}
+            height={2000}
           />
         );
 
@@ -81,8 +81,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
             <Image
               src={contentAs.src}
               alt={contentAs.alt}
-              width={1000}
-              height={1000}
+              width={2000}
+              height={2000}
               className={styles.image} // Стили для изображения
             />
             {typeof contentAs.text === "string" ? (
@@ -101,8 +101,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
           <Image
             src={contentAs.src}
             alt={contentAs.alt}
-            width={1920}
-            height={1200}
+            width={2500}
+            height={2000}
             className={styles.imageFull} // Стили для изображения на весь экран
           />
         );
@@ -161,14 +161,15 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
       // Обработка заголовка с текстом
       case "titleText":
         return (
-          <div>
-            <h2>{contentAs.title}</h2> {/* Заголовок */}
+          <div className={styles.TitleText}>
+            <h2 className={styles.TextTitleText__Title}>{contentAs.title}</h2>
             {typeof contentAs.text === "string" ? (
-              <p>{contentAs.text}</p> // Текст под заголовком
-            ) : (
               <p
-                dangerouslySetInnerHTML={{ __html: contentAs.text as string }}
+                className={styles.TextTitleText__MainText}
+                dangerouslySetInnerHTML={{ __html: contentAs.text }}
               />
+            ) : (
+              <p className={styles.TextTitleText__MainText}>{contentAs.text}</p>
             )}
           </div>
         );

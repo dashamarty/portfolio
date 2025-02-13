@@ -438,6 +438,78 @@ export const folders = [
         ],
         link: "/project/Radiant",
       },
+      {
+        id: "SoapFox",
+        title: "SoapFox",
+        subtitle: "rebranding case *",
+        description:
+          "Rebranding of a brand of organic handmade cosmetics from EEU.",
+          imageUrl: "/projects/soap/cover.jpg",
+          details: [
+          {
+            type: "textTitleText",
+            title: "About brand",
+            text: "An organic handmade cosmetics brand from Russia, with over 10 boutiques in CIS countries. The brand offers a wide range of fully hypoallergenic cosmetics. Each product is crafted with care, using natural ingredients to ensure the highest quality and safety for all skin types. Discover the essence of nature in every jar, and let your skin experience the purest beauty rituals.",
+          },
+          {
+            type: "image",
+            src: "/projects/soap/cover.jpg",
+            alt: "Image of project",
+          },
+          {
+            type: "image",
+            src: "/projects/soap/1.png",
+            alt: "Image of project",
+          },
+          {
+            type: "titleText",
+            title: "Task of the project",
+            text: "Our main task is to completely overhaul the brand identity, create a new logo, and redefine the target audience. The cosmetics are not cheap, but the packaging currently looks like something from the budget category. <br/><br/><span>We want the brand to look premium at first glance—not exactly luxury, but a solid mid-range that people would want to buy both for themselves and as gifts.</span>",
+          },
+          {
+            type: "textTitleText",
+            title: "logo",
+            text: "In the logo, it's important to use our name 'Mыльный лис' and to definitely include the image of a fox, as it holds significant meaning for the creator. As a reference, examples of artistic handwritten fonts were attached.",
+          },
+          {
+            type: "imageText",
+            src: "/projects/soap/2.png",
+            alt: "",
+            text: "reference from owner",
+          },
+          {
+            type: "image",
+            src: "/projects/soap/3.png",
+            alt: "",
+          },
+          {
+            type: "text",
+            text: "The first challenge was to choose an artistic font while keeping the text readable and similar to the reference.<br/><br/> The name of the brand is in Cyrillic, and especially these letters don’t have descenders (the parts of letters that extend below the baseline) and ascenders (the parts of letters that extend above the typical height of lowercase letters). <br/><br/>Because of this, all handwritten options look like italic fonts, and we don’t have the opportunity to create wide rounded elements. So I chose a bold brush font and extended some lines. (next pic)",
+          },
+          {
+            type: "fullScreenImage",
+            src: "/projects/soap/4.png",
+            alt: "",
+          },
+          {
+            type: "textTitleText",
+            title: "packaging",
+            text: "I developed packaging for a range of 16 different products, with some items including various shades or flavors. Additionally, we selected eco-friendly and recyclable materials for the boxes and labels on the jars.",
+          },
+          {
+            type: "image",
+            src: "/projects/soap/6.png",
+            alt: "",
+          },
+          {
+            type: "fullScreenImage",
+            src: "/projects/soap/7.png",
+            alt: "",
+          },
+          
+        ],
+        link: "/project/SoapFox",
+      },
     ],
   },
 //   {
