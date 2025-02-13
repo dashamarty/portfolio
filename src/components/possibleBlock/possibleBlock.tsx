@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const PossibleBlock = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <Image
         className={styles.image1}
         src={"/possible/1.png"}
