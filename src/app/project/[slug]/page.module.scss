@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 150px 130px 100px 130px;
+    padding: 150px 250px 100px 50px;
     background-color: #fafafa;
 
     @media (max-width: 900px) {
@@ -25,14 +25,14 @@
       }
 
       .title {
-        font-size: 260px;
+        font-size: 220px;
         line-height: 100%;
         margin-left: -20px;
         padding-bottom: 200px;
         color: #1E1F20;
 
         @media (max-width: 1500px) {
-            font-size: 170px;
+            font-size: 140px;
             margin-left: -10px;
             padding-bottom: 150px;
           }
