@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 150px 50px 100px 50px;
+    padding: 150px 130px 100px 130px;
     background-color: #fafafa;
 
     @media (max-width: 900px) {
@@ -82,7 +82,7 @@
       @media (max-width: 900px) {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 50px;
       }
     
 }
