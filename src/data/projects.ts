@@ -293,7 +293,7 @@ export const folders = [
     title: "Marketing",
     projects: [
       {
-        id: "Soon",
+        id: "https://www.behance.net/dashasinko",
         title: "Soon",
         subtitle: "brand identity case *",
         description:
@@ -399,7 +399,7 @@ export const folders = [
             text: "Instagram post about welcome gifts for new participicants",
           },
         ],
-        link: "",
+        link: "https://www.behance.net/dashasinko",
       },
     ],
   },
