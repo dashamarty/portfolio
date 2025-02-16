@@ -413,14 +413,14 @@ export const folders = [
       title: "Design with AI",
       subtitle: "creative case just for fun - inspired by Absalon in Copenhagen",
       description:
-        "I decided to play with AI and create some illusrtations to use in my design. I was inspired by Absalon in Copenhagen.",
+        "I decided to experiment with AI and create some illustrations for my design. I was inspired by Absalon in Copenhagen — its unique style and atmosphere.",
         imageUrl: "/projects/absalon/cover.jpg",
         details: [
           {
             type: "textTitleText",
             title: "Project Idea",
-            text: "For a long time I avoided working with artificial intelligence. It seemed to me that this was a new technology that wanted to destroy all sincere realness and replace the real thing with a plastic analogue. Some grumpy old woman sat inside me and resisted opening up to the new. But I admit my mistake and have been learning to work with artificial intelligence for some time now and I want to show you a couple of funny things",
-            additionalText: "AI is a unique opportunity to get cool illustrations and photos in different styles without copyright quickly and at a very low cost. It is also a cool way to pump up our creativity and create something impossible."
+            text: "For a long time, I avoided working with artificial intelligence. It felt like a technology that would erase sincerity and replace realness with a plastic copy. A grumpy old lady inside me resisted embracing the new. But I admit—I was wrong. I've been learning to work with AI, and now I want to share some of the fun things I've created.",
+            additionalText: "AI offers a unique opportunity to generate stunning illustrations and photos in various styles quickly, copyright-free, and at a low cost. It’s also an exciting way to boost creativity and bring impossible ideas to life."
           },
           {
             type: "image",
@@ -466,7 +466,7 @@ export const folders = [
           {
             type: "titleText",
             title: "Croquis",
-            text: "Croquis drawing is quick and sketchy drawing of usually a live model. Croquis drawings are made in a few minutes, after which the model changes pose or leaves and another croquis is drawn. So I wanted to show the variety of poses in my art and this pencil drawing style.  ",
+            text: "Croquis drawing is all about capturing quick, expressive sketches of live models. Since the poses change rapidly, I wanted to reflect that diversity in my art and use a pencil drawing style.",
           },
           {
             type: "imageText",
@@ -481,7 +481,7 @@ export const folders = [
           },
           {
             type: "text",
-            text: "It was really funny to decribe all poses to AI and then model letters from them. I love this process!",
+            text: "Describing all the poses to AI was both hilarious and challenging, especially when modeling letters from them. But I truly enjoyed the process!",
           },
           {
             type: "fullScreenImage",
@@ -491,7 +491,7 @@ export const folders = [
           {
             type: "titleText",
             title: "Par Dans (Couple Dance)",
-            text: "For this event I wanted to create illustrations in plasticine style. I think it has some metaphorical meaning, like be 'plastic and flexible like plasticine'. I think it also has retro vibe and remind me some plasticine cartoons from my childhood.",
+            text: "For this event, I wanted to create illustrations in a plasticine style. I love its metaphorical meaning—being flexible and adaptable, just like plasticine. It also carries a nostalgic, retro vibe, reminding me of old-school plasticine cartoons from my childhood.",
           },
           {
             type: "imageText",
@@ -516,7 +516,7 @@ export const folders = [
           {
             type: "titleText",
             title: "Fællesspisning (Shared dinner)",
-            text: "The final design in this project will be a poster for a shared dinner event. I think this is Absalon's Thing and a very cool idea to spend an evening and maybe meet new people. The poster is naturally in a retro style and I wanted to depict on it how many different hands - men's and women's - are reaching for delicious food that looks simple but very attractive.",
+            text: "The final piece in this project is a poster for a shared dinner event. I think this is Absalon’s signature experience—a fantastic way to spend an evening and meet new people.<br/><br/> The poster naturally follows a retro aesthetic, depicting a scene where many different hands—both men’s and women’s—reach out for simple yet delicious food.",
           },
           {
             type: "imageText",
