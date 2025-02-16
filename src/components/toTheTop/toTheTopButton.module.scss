@@ -12,6 +12,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 3000;
   
     &.visible {
       opacity: 1;

@@ -215,6 +215,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
           <video
             className={styles.video}
             src={contentAs.src}
+            muted
             loop
             autoPlay
             playsInline
