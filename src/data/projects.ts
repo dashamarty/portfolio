@@ -414,7 +414,7 @@ export const folders = [
       subtitle: "creative case just for fun - inspired by Absalon in Copenhagen",
       description:
         "I decided to experiment with AI and create some illustrations for my design. I was inspired by Absalon in Copenhagen — its unique style and atmosphere.",
-        imageUrl: "/projects/absalon/cover.jpg",
+        imageUrl: "/projects/absalon/1.png",
         details: [
           {
             type: "textTitleText",
