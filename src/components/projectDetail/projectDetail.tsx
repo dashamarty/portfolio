@@ -134,7 +134,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
               <h3 className={styles.TextTitleText__Title}>{contentAs.title}</h3>{" "}
               {/* Заголовок */}
               {typeof contentAs.text === "string" ? (
-                <p className={styles.TextTitleText__Text}>{contentAs.text}</p> // Основной текст
+                <p
+                  className={styles.TextTitleText__Text}
+                  dangerouslySetInnerHTML={{ __html: contentAs.text as string }}
+                ></p> // Основной текст
               ) : (
                 <p
                   className={styles.TextTitleText__Text}

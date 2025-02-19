@@ -64,6 +64,21 @@
             font-size: 15px;
 
         }
+
+        &__contact {
+            color: #fafafa;
+            background-color: #AA0202;
+            padding-inline: 5px;
+
+            &::after {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #023048;
+
+            }
+        }
         
         &::after {
           content: "";

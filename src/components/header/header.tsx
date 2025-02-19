@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./header.module.scss";
+import classNames from "classnames";
 export const handleScroll = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
@@ -30,7 +31,7 @@ export const Header = () => {
         </button>
         <button
           onClick={() => handleScroll("contacts")}
-          className={styles.link}
+          className={classNames(styles.link, styles.link__contact)}
         >
           contacts
         </button>
