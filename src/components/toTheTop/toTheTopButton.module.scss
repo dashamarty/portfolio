@@ -2,7 +2,7 @@
     border: none;
     background-color: transparent;
     position: fixed;
-    bottom: 40vh;
+    bottom: 38vh;
     right: 2rem;
     width: 100px;
     height: 100px;
@@ -13,7 +13,14 @@
     pointer-events: none;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: 3000;
-  
+
+    @media (max-width: 950px) {
+      bottom: 2rem;
+      right: 25vw;
+    
+  }
+
+    
     &.visible {
       opacity: 1;
       pointer-events: auto;

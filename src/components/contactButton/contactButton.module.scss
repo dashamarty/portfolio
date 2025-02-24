@@ -8,6 +8,12 @@
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+
+    @media (max-width: 950px) {
+      bottom: 2rem;
+      right: 50vw;
+    
+  }
   }
   
   .contactButton.visible {

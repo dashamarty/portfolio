@@ -28,7 +28,11 @@ const ContactButton: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 500);
+      if (window.scrollY > window.innerHeight) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
