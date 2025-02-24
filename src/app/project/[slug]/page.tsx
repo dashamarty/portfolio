@@ -5,6 +5,7 @@ import { Header } from "@/components/header/header";
 import { ProjectDetail } from "@/components/projectDetail/projectDetail";
 import ToTheTopButton from "@/components/toTheTop/toTheTopButton";
 import Link from "next/link";
+import ContactButton from "@/components/contactButton/contactButton";
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>;
@@ -49,7 +50,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </div>
       </div>
+      <ContactButton />
       <ToTheTopButton />
+
       <Footer />
     </>
   );

@@ -15,6 +15,11 @@ const contactsData = [
     key: "@dariasinko",
     href: "https://www.linkedin.com/in/dariasinko",
   },
+  {
+    title: "behance",
+    key: "@dashasinko",
+    href: "https://www.behance.net/dashasinko",
+  },
 ];
 
 export const Footer = () => {

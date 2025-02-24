@@ -671,7 +671,57 @@ export const folders = [
         ],
         link: "project/AbsalonInspired",
       },
-     
+      {
+        id: "LifeLab",
+        title: "LifeLab ",
+        subtitle: "* brand identity case for designers challange",
+        description:
+          "I took part in a design competition and would like to share my project for multivatamins brand - LifeLab.",
+          imageUrl: "/projects/lifeLab/cover.png",
+          details: [
+            {
+              type: "titleText",
+              title: "Project Idea",
+              text: "To make long story short - it is a fictitious vitamin brand that needed packaging and shipping box designs. I created a bright, memorable design that would stand out on store shelves. It was also the first time I worked with small 3D models of vitamins and even added them to the photo. <br/><br/> I don’t want to invent some kind of story for these vitamins, I’m just sharing a visual.",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/1.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/2.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/3.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/4.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/cover.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/6.png",
+              alt: "Image of project",
+            },
+            {
+              type: "image",
+              src: "/projects/lifeLab/7.png",
+              alt: "Image of project",
+            },
+          ],
+          link: "project/LifeLab",
+        },
     ],
   },
 ];

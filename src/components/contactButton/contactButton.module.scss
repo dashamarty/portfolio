@@ -1,0 +1,84 @@
+.contactButton {
+ opacity: 0;
+    position: fixed;
+    bottom: 150px;
+    right: 35px; /* Чтобы не пересекаться с кнопкой "To the Top" */
+    z-index: 1000;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+
+  }
+  
+  .contactButton.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .contacts {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+
+
+    &__item {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      
+      span {
+        min-width: max-content;
+      }
+    }
+  }
+
+  .line {
+    display: inline-block;
+    border-bottom: 1px solid #fafafa;
+    min-width: 15px;
+    width: 100%;
+  }
+
+/* Дополнительные стили для функционала */
+.icon {
+  position: relative;
+}
+
+.contactsOverlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: -140;
+  width: 240px;
+  height: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  background-color: #023048;
+  color: #fafafa;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.visibleContacts {
+  opacity: 1;
+}
