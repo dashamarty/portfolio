@@ -677,7 +677,7 @@ export const folders = [
         subtitle: "* brand identity case for designers challange",
         description:
           "I took part in a design competition and would like to share my project for multivatamins brand - LifeLab.",
-          imageUrl: "/projects/lifeLab/cover.png",
+          imageUrl: "/projects/lifeLab/0.png",
           details: [
             {
               type: "titleText",
@@ -706,7 +706,7 @@ export const folders = [
             },
             {
               type: "image",
-              src: "/projects/lifeLab/cover.png",
+              src: "/projects/lifeLab/0.png",
               alt: "Image of project",
             },
             {
