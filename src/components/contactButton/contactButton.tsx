@@ -28,7 +28,16 @@ const ContactButton: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      // Check if the contacts element is visible in the viewport
+      const contactsElement = document.getElementById("contacts");
+      let contactsInView = false;
+      if (contactsElement) {
+        const rect = contactsElement.getBoundingClientRect();
+        contactsInView = rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      // Show the button if scrolled beyond the window height and not in the contacts area
+      if (window.scrollY > window.innerHeight && !contactsInView) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
