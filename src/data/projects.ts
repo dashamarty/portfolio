@@ -292,6 +292,85 @@ export const folders = [
     id: "folder2",
     title: "Marketing",
     projects: [
+      {
+        id: "PresentationForMarina",
+        title: "International ICF Coach",
+        subtitle: "* my work as freelancer for International ICF Coach Marina",
+        description:
+          "The presentation, designed for an international event on personal branding and Instagram marketing for women.",
+          imageUrl: "/projects/Marina/cover.jpg",
+          details: [
+            {
+              type: "titleText",
+              title: "Project Idea",
+              text: `Creating a presentation for Marina <br/><a href="https://www.instagram.com/belorussochka/" style="color: #023048;"><i>[ her instagram profile ]</i></a>, a Business Mentor and International ICF Coach, was an inspiring project. What made this collaboration truly special was her willingness to embrace a softer, more delicate aesthetic—one that reflected her authenticity and confidence.`,
+            },
+            {
+              type: "video",
+              src: "/projects/Marina/1.MOV",
+            },
+            {
+              type: "fullText",
+              text: "As the owner of a floral business, she naturally gravitated towards an elegant design adorned with floral elements, which also happens to be one of my favorite decorative styles. <br/><br/>The presentation was crafted for an international event where Marina spoke on the topic of personal branding and Instagram promotion for women. To ensure her message stood out, I incorporated a balance of structured data and creative visuals. A mix of well-organized tables, dynamic charts, and artistic graphics allowed her key insights to be delivered in a visually compelling way. The result was a presentation that not only resonated with her audience but also reinforced her professional identity with sophistication and charm.",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/1.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/2.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/3.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/9.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/4.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/7.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/5.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/6.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/8.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/10.jpg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/Marina/11.jpg",
+              alt: "Image of project",
+            },
+          ],
+          link: "project/PresentationForMarina",
+        },
       // {
       //   id: "https://www.behance.net/dashasinko",
       //   title: "Soon",

@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import styles from "./projectDetail.module.scss";
+import { useState } from "react";
+import Modal from "../imageModal/imageModal";
 
 // Типы данных для контента
 type Content =
@@ -27,7 +30,8 @@ type Content =
       listItems: string[];
       additionalText: string | React.ReactNode;
     } // Список с дополнительным текстом
-  | { type: "video"; src: string; poster?: string };
+  | { type: "video"; src: string; poster?: string }
+  | { type: "fullText"; text: string };
 
 // Компонент ProjectDetail, который принимает контент и рендерит его
 type ProjectDetailProps = {
@@ -35,6 +39,20 @@ type ProjectDetailProps = {
 };
 
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
+  // Открытие модалки
+  const openModal = (src: string) => {
+    setModalImage(src);
+    setIsModalOpen(true);
+  };
+
+  // Закрытие модалки
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage(null);
+  };
   // Проверка, что content является объектом с полем type
   if (typeof content === "object" && content !== null && "type" in content) {
     const contentAs = content as Content; // Преобразуем content в тип Content
@@ -54,37 +72,106 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
       // Обработка изображения
       case "image":
         return (
-          <Image
-            className={styles.image} // Стили для изображения
-            src={contentAs.src}
-            alt={contentAs.alt}
-            width={2000}
-            height={2000}
-          />
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.image} // Стили для изображения
+              src={contentAs.src}
+              alt={contentAs.alt}
+              width={2000}
+              height={2000}
+            />
+            <div
+              className={styles.magnifier}
+              onClick={() => openModal(contentAs.src)} // Открытие модалки по клику
+            >
+              <svg
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 16.5L25.2732 28.3233M19.3748 10.414C19.3748 15.2739 15.4352 19.2135 10.5754 19.2135C5.71554 19.2135 1.77588 15.2739 1.77588 10.414C1.77588 5.55422 5.71554 1.61456 10.5754 1.61456C15.4352 1.61456 19.3748 5.55422 19.3748 10.414Z"
+                  stroke="#AA0202"
+                  strokeWidth="3.22917"
+                />
+              </svg>
+            </div>
+            {isModalOpen && modalImage && (
+              <Modal
+                src={modalImage}
+                alt={contentAs.alt}
+                onClose={closeModal} // Закрытие модалки
+              />
+            )}
+          </div>
         );
 
       case "halfScreenImage":
         return (
-          <Image
-            className={styles.ImageHalfScreen} // Стили для изображения на пол экрана
-            src={contentAs.src}
-            alt={contentAs.alt}
-            width={960}
-            height={540}
-          />
+          <div className={styles.imageContainer}>
+            <Image
+              className={styles.ImageHalfScreen} // Стили для изображения на пол экрана
+              src={contentAs.src}
+              alt={contentAs.alt}
+              width={960}
+              height={540}
+            />
+            <div
+              className={styles.magnifier}
+              onClick={() => openModal(contentAs.src)} // Открытие модалки по клику
+            >
+              🔍
+            </div>
+            {isModalOpen && modalImage && (
+              <Modal
+                src={modalImage}
+                alt={contentAs.alt}
+                onClose={closeModal} // Закрытие модалки
+              />
+            )}
+          </div>
         );
 
       // Обработка изображения с текстом
       case "imageText":
         return (
           <div className={styles.ImageText}>
-            <Image
-              src={contentAs.src}
-              alt={contentAs.alt}
-              width={2000}
-              height={2000}
-              className={styles.image} // Стили для изображения
-            />
+            <div className={styles.imageContainer}>
+              <Image
+                src={contentAs.src}
+                alt={contentAs.alt}
+                width={2000}
+                height={2000}
+                className={styles.image}
+              />
+              <div
+                className={styles.magnifier}
+                onClick={() => openModal(contentAs.src)} // Открытие модалки по клику
+              >
+                <svg
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 16.5L25.2732 28.3233M19.3748 10.414C19.3748 15.2739 15.4352 19.2135 10.5754 19.2135C5.71554 19.2135 1.77588 15.2739 1.77588 10.414C1.77588 5.55422 5.71554 1.61456 10.5754 1.61456C15.4352 1.61456 19.3748 5.55422 19.3748 10.414Z"
+                    stroke="#AA0202"
+                    strokeWidth="3.22917"
+                  />
+                </svg>
+              </div>
+              {isModalOpen && modalImage && (
+                <Modal
+                  src={modalImage}
+                  alt={contentAs.alt}
+                  onClose={closeModal} // Закрытие модалки
+                />
+              )}
+            </div>
             {typeof contentAs.text === "string" ? (
               <p className={styles.text}>{contentAs.text}</p> // Текст рядом с изображением
             ) : (
@@ -98,13 +185,40 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
       // Обработка изображения на весь экран
       case "fullScreenImage":
         return (
-          <Image
-            src={contentAs.src}
-            alt={contentAs.alt}
-            width={2500}
-            height={2000}
-            className={styles.imageFull} // Стили для изображения на весь экран
-          />
+          <>
+            <Image
+              src={contentAs.src}
+              alt={contentAs.alt}
+              width={2500}
+              height={2000}
+              className={styles.imageFull} // Стили для изображения на весь экран
+            />
+            <div
+              className={styles.magnifier}
+              onClick={() => openModal(contentAs.src)} // Открытие модалки по клику
+            >
+              <svg
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 16.5L25.2732 28.3233M19.3748 10.414C19.3748 15.2739 15.4352 19.2135 10.5754 19.2135C5.71554 19.2135 1.77588 15.2739 1.77588 10.414C1.77588 5.55422 5.71554 1.61456 10.5754 1.61456C15.4352 1.61456 19.3748 5.55422 19.3748 10.414Z"
+                  stroke="#AA0202"
+                  strokeWidth="3.22917"
+                />
+              </svg>
+            </div>
+            {isModalOpen && modalImage && (
+              <Modal
+                src={modalImage}
+                alt={contentAs.alt}
+                onClose={closeModal} // Закрытие модалки
+              />
+            )}
+          </>
         );
 
       // Обработка списка с текстом
@@ -226,10 +340,21 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
           />
         );
 
+      case "fullText":
+        return (
+          <p
+            className={styles.FullText}
+            dangerouslySetInnerHTML={{
+              __html: contentAs.text as string,
+            }}
+          />
+        );
+
       // Если тип не найден, вернуть null
       default:
         return null;
     }
   }
+
   return null;
 };

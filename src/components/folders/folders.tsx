@@ -56,11 +56,11 @@ export default function Folders() {
             />
 
             <CardList
-              cards={folder.projects.map((project) => ({
-                title: project.title,
-                description: project.description,
-                imageUrl: project.imageUrl,
-                link: project.link,
+              cards={folder?.projects?.map((project) => ({
+                title: project?.title,
+                description: project?.description,
+                imageUrl: project?.imageUrl,
+                link: project?.link,
               }))}
             />
           </div>

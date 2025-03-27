@@ -12,7 +12,7 @@ type Card = {
   link: string;
 };
 
-export default function CardList({ cards }: { cards: Card[] }) {
+export default function CardList({ cards }: { cards?: Card[] }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.swiperContainer}>
@@ -28,13 +28,13 @@ export default function CardList({ cards }: { cards: Card[] }) {
           slidesOffsetBefore={70}
           speed={800}
         >
-          {cards.map((card, index) => (
+          {cards?.map((card, index) => (
             <SwiperSlide key={index}>
               <Card
-                title={card.title}
-                description={card.description}
-                imageUrl={card.imageUrl}
-                link={card.link}
+                title={card?.title}
+                description={card?.description}
+                imageUrl={card?.imageUrl}
+                link={card?.link}
               />
             </SwiperSlide>
           ))}

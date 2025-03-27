@@ -1,0 +1,41 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15000;
+  }
+  
+  .modalContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;  /* Ширина контента 90% от ширины экрана */
+    height: 90vh; /* Высота контента 90% от высоты экрана */
+    overflow: hidden;
+  }
+  
+  .modalContent__image {
+    object-fit: contain;
+    width: 100%; /* Ширина изображения 100% от контейнера */
+    height: 100%; /* Высота изображения 100% от контейнера */
+    display: block;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff; /* Чтобы кнопка была видна на темном фоне */
+    cursor: inherit;
+  }
+  

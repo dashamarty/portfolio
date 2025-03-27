@@ -9,7 +9,6 @@
 }
 
 .image {
-  background-color: #AA0202;
     width: 100%;
     height: auto;
 
@@ -171,7 +170,7 @@
     }
 }
 
-.text {
+.text, .FullText {
     color: #1E1F20;
     font-size: 30px;
     @media (max-width: 1500px) {
@@ -185,6 +184,11 @@
       @media (max-width: 900px) {
         font-size: 24px;
       }
+}
+
+.FullText {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .textFlex {
@@ -230,4 +234,26 @@
   height: auto;
     max-height: 500px;
     object-fit: cover;
+}
+
+
+
+//////////
+/// 
+.imageContainer {
+  position: relative;
+  &:hover .magnifier {
+    opacity: 1;
+  }
+}
+
+.magnifier {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
