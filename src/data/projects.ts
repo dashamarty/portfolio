@@ -627,7 +627,7 @@ export const folders = [
         subtitle: "AI case - study project",
         description:
           "This is my exam project after completing the training in professional image generation using artificial intelligence.",
-          imageUrl: "/projects/matchahus/1.png",
+          imageUrl: "/projects/matchahus/4.png",
           details: [
             {
               type: "textTitleText",
