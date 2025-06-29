@@ -371,6 +371,105 @@ export const folders = [
           ],
           link: "project/PresentationForMarina",
         },
+        {
+        id: "DANSIC",
+        title: "DANSIC'25 Event Branding",
+        subtitle: "* Marketing & Visual Identity Lead",
+        description:
+          "Created a full visual identity system for a cross-platform campaign supporting a career-focused networking event in Denmark.",
+          imageUrl: "/projects/dansic/cover.png",
+          details: [
+            {
+              type: "titleText",
+              title: "Project Idea",
+              text: "Career Insights was a live networking event organized by DANSIC (Danish Social Innovation Club), focused on empowering international students and job seekers in Denmark. <br/><br/> The evening brought together speakers from companies like Novo Nordisk, Maersk, The Copenhagen Post, and more, creating a space for real conversations about the Danish job market, career growth, and professional identity.",
+            },
+            {
+            type: "image",
+            src: "/projects/dansic/1.jpg",
+            alt: "",
+          },
+           {
+            type: "image",
+            src: "/projects/dansic/2.jpg",
+            alt: "",
+          },
+          {
+              type: "textListText",
+              text: "I developed the visual identity for the event across multiple formats:",
+              listItems: [
+                "Posters (A2 & A3)",
+                "Printed materials for uni's across CPH",
+                "Instagram and LinkedIn content",
+                "Digital visuals for communication",
+                "Branded assets for Eventbrite"
+              ],
+            },
+            {
+              type: "titleText",
+              title: "Social Media & Content",
+              text: "Planned and executed the content strategy for <a href='https://www.instagram.com/dansic_dk/' target='_blank' style='color:#6E0707; text-decoration:underline;'>Instagram</a> and <a href='https://www.linkedin.com/company/2840893/admin/dashboard/' target='_blank' style='color:#6E0707; text-decoration:underline;'>LinkedIn</a><br/><br/>Wrote all public-facing text: speaker introductions, event reminders, thank-you posts<br/><br/>Designed and scheduled stories, carousels, and final wrap-up posts",
+            },
+            {
+            type: "image",
+            src: "/projects/dansic/3.png",
+            alt: "",
+          },
+          {
+            type: "image",
+            src: "/projects/dansic/4.png",
+            alt: "",
+          },
+          {
+              type: "titleText",
+              title: "Facebook Advertising Campaign",
+              text: "I created, launched, and optimized two targeted Facebook Ads campaigns focused on international students and young professionals in Denmark.<br/><br/>Across both campaigns, we spent a total of DKK 450.02, resulting in 151 link clicks and 99 confirmed registrations directly from the ads. With just 5 days of promotion before the event, the campaigns showed strong performance and proved effective in reaching our target audience.",
+            },
+            {
+              type: "video",
+              src: "/projects/dansic/5.mp4",
+                isVertical: true,
+
+            },
+            {
+            type: "image",
+            src: "/projects/dansic/6.jpg",
+            alt: "",
+          },
+          {
+              type: "titleText",
+              title: "Outcome",
+              text: "The event gathered nearly 100 attendees out of 180 registrations, with the majority coming via Facebook ads. Hosted at Talent Garden Copenhagen, it received overwhelmingly positive feedback from both participants and speakers.<br/><br/> We saw new connections form, open and practical conversations happen, and a strong sense of community shared across cultures and industries.",
+            },
+            {
+            type: "image",
+            src: "/projects/dansic/7.jpeg",
+            alt: "",
+          },
+          {
+            type: "image",
+            src: "/projects/dansic/8.jpeg",
+            alt: "",
+          },
+          {
+              type: "titleText",
+              title: "Reflections",
+              text: "This project allowed me to own a marketing process end-to-end, within the context of a mission-driven team. It also gave me a deeper connection to the international talent community in Denmark and a chance to help build something meaningful for others navigating their path.",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/dansic/9.jpeg",
+              alt: "Image of project",
+            },
+            {
+              type: "fullScreenImage",
+              src: "/projects/dansic/10.jpg",
+              alt: "Image of project",
+            },
+
+          ],
+          link: "project/DANSIC",
+        },
       // {
       //   id: "https://www.behance.net/dashasinko",
       //   title: "Soon",

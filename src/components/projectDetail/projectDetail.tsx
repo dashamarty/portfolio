@@ -30,7 +30,7 @@ type Content =
       listItems: string[];
       additionalText: string | React.ReactNode;
     } // Список с дополнительным текстом
-  | { type: "video"; src: string; poster?: string }
+  | { type: "video"; src: string; isVertical?: boolean }
   | { type: "fullText"; text: string };
 
 // Компонент ProjectDetail, который принимает контент и рендерит его
@@ -330,7 +330,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ content }) => {
       case "video":
         return (
           <video
-            className={styles.video}
+            className={
+              contentAs.isVertical ? styles.videoVertical : styles.video
+            }
             src={contentAs.src}
             muted
             loop

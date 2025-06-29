@@ -6,12 +6,12 @@
 }
 
 .image2 {
-    width: 80vw;
+    width: 60vw;
     height: auto;
     object-fit: contain;
     position: absolute;
-    left: 10vw;
-    top: 350px;
+    left: 30vw;
+    top: 300px;
     transform: translateX(0); 
   transition: transform 0.8s ease; 
 
@@ -45,7 +45,7 @@
     padding-inline: 50px;
     padding-block: 100px;
     position: relative;
-    min-height: 110vw;
+    min-height: 90vw;
 
     @media (max-width: 1400px) {
         padding-block: 80px;
