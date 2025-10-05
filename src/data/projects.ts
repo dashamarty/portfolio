@@ -1,6 +1,6 @@
 export const folders = [
   {
-    id: "folder1",
+    id: "folder2",
     title: "Brand Identity",
     projects: [
       {
@@ -289,7 +289,7 @@ export const folders = [
     ],
   },
   {
-    id: "folder2",
+    id: "folder1",
     title: "Marketing",
     projects: [
       {
@@ -720,135 +720,135 @@ export const folders = [
     id: "folder3",
     title: "Creativity",
     projects: [
-      {
-        id: "matchahus",
-        title: "Matchahus",
-        subtitle: "AI case - study project",
-        description:
-          "This is my exam project after completing the training in professional image generation using artificial intelligence.",
-          imageUrl: "/projects/matchahus/4.png",
-          details: [
-            {
-              type: "textTitleText",
-              title: "Project Idea",
-              text: "I decided to create a project for a super aesthetic matcha house in Copenhagen, which would become a center for influencers and people who appreciate unique authentic places.<br/><br/> Mostly, this generated things are content for social medias and other brand-styled products. ",
-              additionalText: "All materials for this project were generated in Midjourney, Adobe FireFly and Recraft."
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/logo.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/3.png",
-              alt: "Image of project",
-            },
-            {
-              type: "textTitleText",
-              title: "Interior and exterior",
-              text: "I started with interior and exterior designs. <br/><br/>A striking minimalist coffee shop building made from textured white-beige stone with smooth, sculptural lines. <br/><br/>Interior is a contemporary coffee shop interior with natural stone accents, raw stone walls or countertops mixed with warm minimalist decor ",
-              additionalText: ""
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/4.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/5.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/9.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/17.png",
-              alt: "Image of project",
-            },
-            {
-              type: "textTitleText",
-              title: "Person",
-              text: "Than I made a 'face' of brand - a typical scandinavian women with fair skin, light freckles, and long, natural blonde hair. <br/><br/>My task is to create different pictures with the same face.",
-              additionalText: ""
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/11.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/12.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/6.png",
-              alt: "Image of project",
-            },
-            {
-              type: "imageText",
-              src: "/projects/matchahus/1.png",
-              alt: "",
-              text: "Add a couple of mockup pictures.",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/8.png",
-              alt: "Image of project",
-            },
-            {
-              type: "textTitleText",
-              title: "Creativity",
-              text: "Of course, the funniest thing is to create some unrealistic things that would fit into the brand concept. There are matcha bodybuilders, matcha hot springs in the Alps, a Scandinavian mermaid and kittens.",
-              additionalText: ""
-            },
-            {
-              type: "imageText",
-              src: "/projects/matchahus/13.png",
-              alt: "",
-              text: "",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/14.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/15.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/16.png",
-              alt: "Image of project",
-            },
-            {
-              type: "image",
-              src: "/projects/matchahus/18.png",
-              alt: "Image of project",
-            },
-            {
-              type: "textTitleText",
-              title: "Instagram Grid",
-              text: "Let's collect all the photos in the same style, setting and lighting and create a small summary in the Instagram profile. <br/><br/> Of course, such photos will not completely replace the real ones, but they can save money on conceptual photo sessions or attract viewers with interesting creative solutions that catch the eye!",
-              additionalText: ""
-            },
-            {
-              type: "imageText",
-              src: "/projects/matchahus/10.png",
-              alt: "",
-              text: "",
-            },
-          ],
-          link: "project/matchahus",
-        },  
+    //   {
+    //     id: "matchahus",
+    //     title: "Matchahus",
+    //     subtitle: "AI case - study project",
+    //     description:
+    //       "This is my exam project after completing the training in professional image generation using artificial intelligence.",
+    //       imageUrl: "/projects/matchahus/4.png",
+    //       details: [
+    //         {
+    //           type: "textTitleText",
+    //           title: "Project Idea",
+    //           text: "I decided to create a project for a super aesthetic matcha house in Copenhagen, which would become a center for influencers and people who appreciate unique authentic places.<br/><br/> Mostly, this generated things are content for social medias and other brand-styled products. ",
+    //           additionalText: "All materials for this project were generated in Midjourney, Adobe FireFly and Recraft."
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/logo.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/3.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "textTitleText",
+    //           title: "Interior and exterior",
+    //           text: "I started with interior and exterior designs. <br/><br/>A striking minimalist coffee shop building made from textured white-beige stone with smooth, sculptural lines. <br/><br/>Interior is a contemporary coffee shop interior with natural stone accents, raw stone walls or countertops mixed with warm minimalist decor ",
+    //           additionalText: ""
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/4.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/5.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/9.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/17.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "textTitleText",
+    //           title: "Person",
+    //           text: "Than I made a 'face' of brand - a typical scandinavian women with fair skin, light freckles, and long, natural blonde hair. <br/><br/>My task is to create different pictures with the same face.",
+    //           additionalText: ""
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/11.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/12.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/6.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "imageText",
+    //           src: "/projects/matchahus/1.png",
+    //           alt: "",
+    //           text: "Add a couple of mockup pictures.",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/8.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "textTitleText",
+    //           title: "Creativity",
+    //           text: "Of course, the funniest thing is to create some unrealistic things that would fit into the brand concept. There are matcha bodybuilders, matcha hot springs in the Alps, a Scandinavian mermaid and kittens.",
+    //           additionalText: ""
+    //         },
+    //         {
+    //           type: "imageText",
+    //           src: "/projects/matchahus/13.png",
+    //           alt: "",
+    //           text: "",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/14.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/15.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/16.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/projects/matchahus/18.png",
+    //           alt: "Image of project",
+    //         },
+    //         {
+    //           type: "textTitleText",
+    //           title: "Instagram Grid",
+    //           text: "Let's collect all the photos in the same style, setting and lighting and create a small summary in the Instagram profile. <br/><br/> Of course, such photos will not completely replace the real ones, but they can save money on conceptual photo sessions or attract viewers with interesting creative solutions that catch the eye!",
+    //           additionalText: ""
+    //         },
+    //         {
+    //           type: "imageText",
+    //           src: "/projects/matchahus/10.png",
+    //           alt: "",
+    //           text: "",
+    //         },
+    //       ],
+    //       link: "project/matchahus",
+    //     },  
       {
       id: "AbsalonInspired",
       title: "Design with AI",
